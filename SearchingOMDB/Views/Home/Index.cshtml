@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">OMBD Movie Search</h1>
+
+    <div class="row mt-2">
+        <div class="col-md-6">
+            <a asp-controller="Movie" asp-action="SearchMovie" class="btn btn-secondary w-100">Movie Search</a> @*returns 1 movie*@
+        </div>
+        <div class="col-md-6">
+            <a asp-controller="Movie" asp-action="SearchMovieList" class="btn btn-secondary w-100">Movie Night Search</a> @*returns 3 movies*@
+        </div>
+    </div>
+</div>
